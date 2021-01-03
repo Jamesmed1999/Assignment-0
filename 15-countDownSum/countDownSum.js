@@ -1,6 +1,13 @@
 class MySolution {
   countDownSum(num) {
-    // Insert code here;
+    let a = 0;
+    while(num <=0)
+    {
+    a += num;
+    
+    this.countDownSum(num-1);
+    }
+    return a;
   }
 }
 
